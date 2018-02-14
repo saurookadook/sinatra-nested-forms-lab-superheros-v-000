@@ -3,6 +3,6 @@ class Team
 
   def initialize(info_hash)
     @name = info_hash[:name]
-    @motto =
+    @motto = info_hash[:motto]
   end
 end
