@@ -10,6 +10,7 @@ class App < Sinatra::Base
 
     post '/' do
       @created_team = Team.new(params[:team])
+      @created_heroes = Hero.new(params[:team][:members])
 
       erb :"../views/team"
     end
