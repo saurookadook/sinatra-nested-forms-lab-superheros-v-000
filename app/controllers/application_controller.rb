@@ -12,7 +12,7 @@ class App < Sinatra::Base
       @created_team = Team.new(params[:team])
 
       params[:team][:members].each do |hero|
-        Hero.new()
+        Hero.new(hero)
 
       erb :"../views/team"
     end
