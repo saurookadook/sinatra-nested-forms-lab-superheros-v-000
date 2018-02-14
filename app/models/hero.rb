@@ -5,4 +5,8 @@ class Hero
 
   def initialize(info_hash)
   end
+
+  def self.all
+    HEROES
+  end
 end
