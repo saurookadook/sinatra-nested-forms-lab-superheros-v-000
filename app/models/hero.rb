@@ -1,2 +1,3 @@
-class Hero < Sinatra::Base
+class Hero
+
 end
