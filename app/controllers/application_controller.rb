@@ -13,6 +13,9 @@ class App < Sinatra::Base
 
       params[:team][:members].each do |hero|
         Hero.new(hero)
+      end
+
+      @heroes = Hero.all
 
       erb :"../views/team"
     end
