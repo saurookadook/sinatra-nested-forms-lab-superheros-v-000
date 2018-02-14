@@ -7,6 +7,7 @@ class Hero
     @name = info_hash[:name]
     @power = info_hash[:power]
     @bio = info_hash[:bio]
+    HEROES << self
   end
 
   def self.all
