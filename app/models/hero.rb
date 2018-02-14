@@ -4,6 +4,9 @@ class Hero
   HEROES = []
 
   def initialize(info_hash)
+    @name = info_hash[:name]
+    @power = info_hash[:power]
+    @bio = info_hash[:bio]
   end
 
   def self.all
