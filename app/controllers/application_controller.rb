@@ -10,6 +10,7 @@ class App < Sinatra::Base
 
     post '/' do
       
+
       erb :"../views/team"
     end
 
